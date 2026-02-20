@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import ThemeToggle from "@/components/common/ThemeToggle";
+import Navigation from "@/components/common/Navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,10 +36,8 @@ export default function RootLayout({
           // disableTransitionOnChange
           storageKey="drone-irakli"
         >
-          <div className="h-screen w-full flex items-center justify-center">
-            <ThemeToggle />
-          </div>
-          <main>{children}</main>
+          <Navigation />
+          <main className="min-h-screen pb-32">{children}</main>
         </ThemeProvider>
       </body>
     </html>
