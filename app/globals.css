@@ -240,7 +240,12 @@
     letter-spacing: var(--tracking-normal);
     font-family: var(--font-body), sans-serif;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-heading), sans-serif;
     font-weight: 700;
   }
@@ -267,4 +272,47 @@
   ::view-transition-new(root) {
     animation: none !important;
   }
+}
+
+/* ── Scrollbar ────────────────────────────────────────────── */
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: oklch(0.8946 0.0153 87.5007) transparent;
+}
+
+.dark {
+  scrollbar-color: oklch(0.2874 0.0244 87.4655) transparent;
+}
+
+/* Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.8946 0.0153 87.5007);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.5868 0.0896 86.1439);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: oklch(0.2874 0.0244 87.4655);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.7309 0.1073 86.3683);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }

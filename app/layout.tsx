@@ -4,6 +4,7 @@ import { Montserrat, Lato } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Navigation from "@/components/common/Navigation";
+import AnimatedWaves from "@/components/common/AnimatedWaves";
 
 const montserrat = Montserrat({ 
   subsets: ["latin"], 
@@ -36,6 +37,7 @@ export default function RootLayout({
           // disableTransitionOnChange
           storageKey="drone-irakli"
         >
+          <AnimatedWaves />
           <Navigation />
           <main className="min-h-screen pb-32">{children}</main>
         </ThemeProvider>
