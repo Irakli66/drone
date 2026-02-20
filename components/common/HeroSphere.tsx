@@ -49,7 +49,7 @@ export default function HeroSphere({
       <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/20 to-black/80 flex flex-col items-center justify-center text-white">
         <div className="text-center space-y-6 px-4 mb-16">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-            Irakli's Imagery Gallery
+            Irakli's Image Gallery
           </h1>
           <p className="text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto">
             Explore stunning sphere and panorama photos captured from above
