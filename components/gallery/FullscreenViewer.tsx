@@ -154,15 +154,17 @@ export default function FullscreenViewer({
             />
           </div>
         ) : (
-          <div className="w-full h-full flex items-center justify-center p-8">
-            <div className="relative w-full h-full">
-              <Image
-                src={imagePath}
-                alt={imageTitle}
-                fill
-                className="object-contain"
-                sizes="100vw"
-              />
+            <div className="w-full h-full flex items-center justify-center p-8">
+              <div className="relative w-full h-full">
+                <Image
+                  src={imagePath}
+                  alt={imageTitle}
+                  fill
+                  className="object-contain"
+                  sizes="100vw"
+                  quality={100}
+                  priority
+                />
             </div>
           </div>
         )}
