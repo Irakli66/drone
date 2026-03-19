@@ -13,7 +13,7 @@ const ReactPhotoSphereViewer = dynamic(
 );
 
 interface HeroSphereProps {
-  imagePath: string;
+  imagePath?: string;
   imageTitle: string;
   totalSpheres: number;
   totalPanoramas: number;
@@ -37,7 +37,7 @@ export default function HeroSphere({
       {/* Sphere Viewer Background */}
       <div className="absolute inset-0">
         <ReactPhotoSphereViewer
-          src={imagePath}
+          src={imagePath ?? "/images/sphere/borjomi.jpg"}
           height="100%"
           width="100%"
           container=""

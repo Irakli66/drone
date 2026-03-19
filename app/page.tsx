@@ -18,7 +18,7 @@ export default function Home() {
       {/* Hero Section with First Sphere */}
       {firstSphere && (
         <HeroSphere
-          imagePath={firstSphere.path}
+          // imagePath={firstSphere.path}
           imageTitle={firstSphere.filename}
           totalSpheres={sphereImages.length}
           totalPanoramas={panoramaImages.length}
